@@ -6,8 +6,8 @@ import logo from '../assets/settings.png'
 
 const Slider = ({themeToggle}) => {
    const [mode, setMode] = useState('')
-   const [visible, setVisible] = useState(true)
-   const [theme, setTheme] = useState('green')
+   const [visible, setVisible] = useState(false)
+   const [theme, setTheme] = useState('lightblue')
 
 
    useEffect(() => {

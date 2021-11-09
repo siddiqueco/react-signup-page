@@ -4,7 +4,7 @@ import bgImg from './assets/bg.png'
 import Main from './components/Main'
 import Sidebar from './components/Sidebar'
 import Slider from './components/Slider'
-import GlobalStyle from './GlobalStyle'
+import GlobalStyle from './Style/GlobalStyle'
 import {
   greenTheme,
   blueTheme,
@@ -16,14 +16,21 @@ import {
 
 const App = () => {
 
-  const [theme, setTheme] = useState('green');
+  const [theme, setTheme] = useState({});
 
   useEffect(() => {
 
   }, [theme])
 
   const themeToggle = (theme) => {
-    setTheme(theme)
+    let myTheme = theme
+    if (myTheme === 'green') myTheme= greenTheme
+    if (myTheme === 'magenda') myTheme= magendaTheme
+    if (myTheme === 'lightblue') myTheme= blueTheme
+    if (myTheme === 'darkblue') myTheme= darkBlueTheme
+    if (myTheme === 'orange') myTheme= orangeTheme
+    if (myTheme === 'yello') myTheme= yelloTheme
+    setTheme(myTheme)
   }
 
   const themeSetup = (theme) => {
@@ -37,7 +44,7 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={themeSetup(theme)}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Slider themeToggle={themeToggle}/>
       <Container>

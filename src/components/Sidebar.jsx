@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import logo from '../assets/reactlogo.png'
 import Input from './Input'
 
 const Sidebar = () => {
-
-
-
-
    return (
       <Container>
          <LogoWrapper>
