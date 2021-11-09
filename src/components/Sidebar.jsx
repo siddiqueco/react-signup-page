@@ -92,7 +92,7 @@ const Container = styled.div`
    min-width: 465px;
    background: transparent;
    background-color: var(--bg-signup);
-   backdrop-filter: blur(20px);
+   backdrop-filter: blur(14px);
    height: 100%;
    display: flex;
    justify-content: space-evenly;

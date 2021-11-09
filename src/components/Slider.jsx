@@ -142,17 +142,12 @@ const Container = styled.div`
       width:250px;
       padding: 2px 9px 1px 9px;
       float: left;
-      /* transition: background .5s ease-in-out 0s; */
       animation: traslatexx 0.5s linear;
    }
 
    @media (max-width: 991px){
       height: 400px!important;
-      overflow-y: scroll;
    }
-   /* .mode-theme-option{
-      display: block;
-   } */
    h2{
       padding: 5px;
       text-align: center;
