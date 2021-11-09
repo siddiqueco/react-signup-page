@@ -1,5 +1,5 @@
 ## React Signup Page
-A signup page with react for practice and know new thing.
+A signup page with React and [Styled-Components](https://styled-components.com/) to practice and know new things.
 
 Live Site: https://react-signup-page.netlify.app/
 
