@@ -46,3 +46,12 @@ export const yelloTheme = {
   inputValid: "#fe2f75",
   inputFocus: "#ffa689",
 };
+export const redTheme = {
+  primaryColor: "#750b20",
+  primaryColorLight: "#a30f2d",
+  fontPrimary: "#dc143c",
+  inputInvalid: "#f05c79",
+  inputValid: "#f8b9c6",
+  inputFocus: "#fde8ec",
+};
+
